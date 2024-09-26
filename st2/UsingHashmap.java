@@ -28,9 +28,9 @@ public class UsingHashmap {
         System.out.println("abc+xyz+mno".split("\\+", 2));
         System.out.println(Arrays.toString("abc+xyz+mno".split("\\+", 2)));
 
-        // System.out.println();
+        
 
-        // for(int i = )
+        
     }
     
 

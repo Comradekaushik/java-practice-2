@@ -13,7 +13,7 @@ public class ExceptionPractice {
             // Throw an object of user defined exception
 
             if(a>0){
-               throw new Myexception("GeeksGeeks"); 
+               throw new Myexception("Custom Exception"); 
             }
 
             if(a<0){
@@ -37,6 +37,7 @@ public class ExceptionPractice {
 
             // Print the message from MyException object
             System.out.println(ex.getMessage());
+            System.out.println(ex.errorString);
         }
         catch(Exception ex){
             System.out.println(ex.getMessage());
@@ -48,9 +49,12 @@ public class ExceptionPractice {
     
 }
 class Myexception extends Exception{
+    String errorString = new String("");
     public Myexception(String s)
     {
-       
         super(s);
+        this.errorString = s;
+       
+        
     }
 }
